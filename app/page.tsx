@@ -1,7 +1,7 @@
-import Image from "next/image";
+import {Header} from "@/app/_components/Header";
 
 export default function Home() {
-  return <main>
-    {/*Header*/}
-  </main>;
+    return <main>
+        <Header/>
+    </main>
 }
