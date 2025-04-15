@@ -28,8 +28,8 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: Readonly<{ children: React.ReactNode }>) {
     return (
         <html lang="en"
-              className={`${GeistSans.variable} ${AnekTelugu.variable} font-sans h-full`}>
-        <body className="bg-background text-foreground">
+              className='h-full'>
+        <body className={`${GeistSans.variable} ${AnekTelugu.variable} font-sans h-full bg-background text-foreground`}>
         {children}
         </body>
         </html>
