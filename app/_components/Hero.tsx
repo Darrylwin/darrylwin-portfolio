@@ -31,10 +31,10 @@ export const Hero = () => {
                 , Lomé.
             </p>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 max-md:m-auto ml-auto">
             <img
                 src="https://imgs.search.brave.com/8BvIGnB9dkMwmNj4oMFZqFv93xAtbymrF4rc4BMC2f0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDEyMjYy/Njk4LmpwZw"
-                className="w-40 h-40 rounded-full object-cover"
+                className="w-40 h-40 rounded-full object-cover max-w-xs max-md:"
                 height="160"
                 alt="Darryl-win's picture"
             />
