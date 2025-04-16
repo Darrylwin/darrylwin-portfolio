@@ -54,4 +54,8 @@
     .text-primary {
         color: var(--text-primary);
     }
+
+    .bg-accent {
+        background-color: var(--accent);
+    }
 }
