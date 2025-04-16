@@ -1,16 +1,14 @@
 @import "tailwindcss";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-    /* Variables de base */
     --radius: 0.625rem;
-
-    --font-sans: var(--font-geist-sans);
+    /*--font-sans: var(--font-geist-sans);*/
+    /*--font-mono: var(--font-geist-mono);*/
     --font-caption: var(--font-caption);
-
-    /* Variables de couleurs */
     --background: hsl(218 14% 16%);
     --foreground: hsl(219 14% 71%);
     --muted: hsl(218 12% 20%);
