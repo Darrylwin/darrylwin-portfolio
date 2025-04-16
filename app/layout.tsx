@@ -6,8 +6,9 @@ import React from "react";
 import {cn} from "@/lib/utils";
 
 const AnekTelugu = Anek_Telugu({
-    subsets: ["latin"],
-    variable: "--font-caption"
+    subsets: ['latin'],
+    variable: '--font-caption',
+    display: 'swap',
 });
 
 // const geistSans = Geist({
@@ -29,7 +30,11 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: Readonly<{ children: React.ReactNode }>) {
     return (
         <html lang="en" className='h-full'>
-        <body className={cn(GeistSans.variable, AnekTelugu.variable, "font-sans h-full bg-background text-foreground")}>
+        <body className={cn(
+            GeistSans.variable,
+            AnekTelugu.variable,
+            "font-sans h-full bg-background text-foreground"
+        )}>
         {children}
         </body>
         </html>

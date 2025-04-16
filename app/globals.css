@@ -8,7 +8,7 @@
     --radius: 0.625rem;
     /*--font-sans: var(--font-geist-sans);*/
     /*--font-mono: var(--font-geist-mono);*/
-    --font-caption: var(--font-caption);
+    --font-caption: var(--font-caption); /* Injecté par next/font */
     --background: hsl(218 14% 16%);
     --foreground: hsl(219 14% 71%);
     --muted: hsl(218 12% 20%);
@@ -44,5 +44,9 @@
     body {
         background-color: var(--background);
         color: var(--foreground);
+    }
+
+    .font-caption {
+        font-family: var(--font-caption), sans-serif;
     }
 }
