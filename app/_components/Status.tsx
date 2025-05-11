@@ -1,6 +1,6 @@
 import {Section} from "@/app/_components/Section";
 import {Card} from "@/components/ui/card";
-import {Code, LucideIcon, MessageCircle, Rss, StickyNote} from "lucide-react";
+import {Code, Home, LucideIcon, MessageCircle, Rss, StickyNote} from "lucide-react";
 import Link from "next/link";
 
 export const Status = () => {
@@ -22,13 +22,22 @@ export const Status = () => {
             </Card>
         </div>
         <div className="flex-[2] w-full flex flex-col gap-4">
-            <Card className="p-4 flex-1">Work</Card>
+            <Card className="p-4 flex-1"><p className="text-lg text-muted-foreground">Work</p>
+                <div className="flex flex-col gap-4">
+                    {WORKS.map((work, index) => (
+                        <Work
+                            key={index}
+                            {...work}
+                        />
+                    ))}
+                </div>
+            </Card>
             <Card className="p-4 flex-1">Contact me</Card>
         </div>
     </Section>
 }
 
-const SIDE_PROJECTS = [
+const SIDE_PROJECTS: SideProjectProps[] = [
     {
         Logo: Code,
         title: "Spot ui",
@@ -63,16 +72,47 @@ type SideProjectProps = {
 }
 
 const SideProject = (props: SideProjectProps) => {
-    return <Link
-        href={props.url}
-        className="inline-flex items-center gap-4 hover:bg-accent p-1 rounded-sm transition-all duration-200"
-    >
-        <span className="bg-accent text-accent-foreground p-3 rounded-sm">
-            <props.Logo size={16}/>
-        </span>
+    return <Link href={props.url}
+                 className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded-sm">
+    <span className="bg-accent text-accent-foreground p-3 rounded-sm">
+        <props.Logo size={16}/>
+    </span>
         <div>
             <p className="text-lg font-semibold">{props.title}</p>
             <p className="text-sm text-muted-foreground">{props.description}</p>
         </div>
+    </Link>
+}
+
+type WorkProps = {
+    image: string;
+    title: string;
+    role: string;
+    url: string;
+    date: string;
+}
+
+const WORKS: WorkProps[] = [
+    {
+        image: 'https://imgs.search.brave.com/N9jywr_ShWSoik-WDqt-LBV9MA0JyIYfDqdroKl1eZg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuZ29vZGZpcm1z/LmNvL3NlcnZpY2Vz/L21lZGl1bS9jb2Rl/bHlueC1zb2Z0d2Fy/ZS5wbmc',
+        title: 'Codelynx',
+        role: 'Funder',
+        date: '2023 - Present',
+        url: "https://codelyns.dev"
+    }
+];
+
+const Work = (props: WorkProps) => {
+    return <Link href={props.url}
+                 className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded-sm">
+        <img src={props.image} alt={props.title} className="w-10 h-10 object-contain rounded-md"/>
+
+        <div className="mr-auto">
+            <div className="flex-initial items-center gap-2">
+                <p className="text-lg font-semibold">{props.title}</p>
+            </div>
+            <p className="text-xs text-muted-foreground">{props.role}</p>
+        </div>
+        <p className="text-xs text-end text-muted-foreground">{props.date}</p>
     </Link>
 }
