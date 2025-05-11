@@ -56,12 +56,13 @@ const ContactCard = (props: {
     description: string;
 }) => {
     return (
-        <div className="w-full bg-transparent border-b border-gray-700 hover:bg-gray-800/30 transition-colors duration-200">
+        <div
+            className="w-full bg-transparent border-b border-gray-700 hover:bg-gray-800/30 transition-colors duration-200">
             <div className="flex items-center justify-between p-4">
                 <div className="flex items-center gap-3">
                     <div className="relative">
                         <img src={props.image} alt="" className="w-12 h-12 rounded-full object-cover"/>
-                        <div className="absolute bottom-0 right-0 p-0.5 bg-black rounded-full border border-gray-600">
+                        <div className="absolute bottom-0 right-0 p-0.5 bg-transparent rounded-full">
                             <img src={props.mediumImage} alt="" className="w-5 h-5 object-contain"/>
                         </div>
                     </div>
