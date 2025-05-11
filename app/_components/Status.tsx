@@ -1,6 +1,6 @@
 import {Section} from "@/app/_components/Section";
 import {Card} from "@/components/ui/card";
-import {Code, Home, LucideIcon, MessageCircle, Rss, StickyNote} from "lucide-react";
+import {ArrowUpRight, Code, LucideIcon, MessageCircle, Rss, StickyNote} from "lucide-react";
 import Link from "next/link";
 
 export const Status = () => {
@@ -32,9 +32,42 @@ export const Status = () => {
                     ))}
                 </div>
             </Card>
-            <Card className="p-4 flex-1">Contact me</Card>
+            <Card className="p-4 flex-1">
+                <p className="text-lg text-muted-foreground">Contact me</p>
+                <ContactCard
+                    image="https://avatars.githubusercontent.com/u/152020049?v=4"
+                    mediumImage='https://imgs.search.brave.com/CNRbeBm5CtoHq7I5qa_MxoFeYuisjeVzC7omXyes0Jw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9mcmVl/bG9nb3BuZy5jb20v/aW1hZ2VzL2FsbF9p/bWcvMTY5MDY0MzU5/MXR3aXR0ZXIteC1s/b2dvLXBuZy5wbmc'
+                    name={'@Darrylwin'} description="20"
+                />
+                <ContactCard
+                    image="https://avatars.githubusercontent.com/u/152020049?v=4"
+                    mediumImage="https://imgs.search.brave.com/-qbPyJOKJWYj7H1DezyMrgBAdYPgoMHEAOQX0JYBDa0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9lbWVk/aWExLm5ocy53YWxl/cy9OV0lTV2FsZXNO/SFNVSy9jYWNoZS9m/aWxlLzdEOUE0NTUx/LTdCMkEtNEMyNC04/RUJBQzRBQ0M4NzBB/RkUwX21lZGl1bS5w/bmc"
+                    name={'Logossou Darryl-win'} description="50"
+                />
+            </Card>
         </div>
     </Section>
+}
+
+const ContactCard = (props: {
+    image: string;
+    mediumImage: string;
+    name: string;
+    description: string;
+}) => {
+    return <Card className="p-3 bg-accent/10 flex items-center gap-4">
+        <div className="relative">
+            <img src={props.image} alt={props.name} className="w-10 h-10 rounded-full object-contain"/>
+            <img src={props.mediumImage} alt={props.name} className="w-4 h-4 absolute -bottom-1 -right-1"/>
+        </div>
+        <div className="mr-auto">
+            <div className="flex items-center gap-2">
+                <p className="text-lg font-semibold">{props.name}</p>
+            </div>
+            <p className="text-xs text-muted-foreground">{props.description}</p>
+        </div>
+        <ArrowUpRight size={16}/>
+    </Card>
 }
 
 const SIDE_PROJECTS: SideProjectProps[] = [
