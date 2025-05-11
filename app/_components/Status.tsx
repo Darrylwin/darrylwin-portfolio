@@ -56,7 +56,7 @@ const ContactCard = (props: {
     description: string;
 }) => {
     return (
-        <div className="w-full bg-transparent border-b border-gray-700 hover:bg-gray-800/30 transition-colors">
+        <div className="w-full bg-transparent border-b border-gray-700 hover:bg-gray-800/30 transition-colors duration-200">
             <div className="flex items-center justify-between p-4">
                 <div className="flex items-center gap-3">
                     <div className="relative">
@@ -118,7 +118,7 @@ type SideProjectProps = {
 
 const SideProject = (props: SideProjectProps) => {
     return <Link href={props.url}
-                 className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded-sm">
+                 className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors duration-200 p-1 rounded-sm">
     <span className="bg-accent text-accent-foreground p-3 rounded-sm">
         <props.Logo size={16}/>
     </span>
@@ -149,7 +149,7 @@ const WORKS: WorkProps[] = [
 
 const Work = (props: WorkProps) => {
     return <Link href={props.url}
-                 className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded-sm">
+                 className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors duration-200 p-1 rounded-sm">
         <img src={props.image} alt={props.title} className="w-10 h-10 object-contain rounded-md"/>
 
         <div className="mr-auto">

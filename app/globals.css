@@ -15,7 +15,7 @@
     --muted-foreground: hsl(218 12% 70%);
     --popover: hsl(218 14% 13%);
     --popover-foreground: hsl(219 14% 81%);
-    --card: hsl(218 14% 14%);
+    --card: hsl(218 14% 10%); /* Rendu plus foncé pour mieux contraster avec l'arrière-plan */
     --card-foreground: hsl(219 14% 76%);
     --border: hsl(218 4% 21%);
     --input: hsl(218 4% 24%);
@@ -57,5 +57,29 @@
 
     .bg-accent {
         background-color: var(--accent);
+    }
+}
+
+/* Assurez-vous que les transitions fonctionnent correctement */
+@layer components {
+    .transition-colors {
+        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+    }
+
+    /* Définition explicite pour les éléments hover */
+    .hover\:bg-accent\/50:hover {
+        background-color: color-mix(in srgb, var(--accent) 50%, transparent);
+        transition-property: background-color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+    }
+
+    .hover\:bg-gray-800\/30:hover {
+        background-color: rgba(31, 41, 55, 0.3);
+        transition-property: background-color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
     }
 }
