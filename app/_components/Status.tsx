@@ -1,6 +1,6 @@
 import {Section} from "@/app/_components/Section";
 import {Card} from "@/components/ui/card";
-import {ArrowUpRight, Code, LucideIcon, MessageCircle, Rss, StickyNote} from "lucide-react";
+import {ArrowUpRight, LucideIcon, CloudSun, Music2, MessagesSquare, UtensilsCrossed, Wallet} from "lucide-react";
 import Link from "next/link";
 
 export const Status = () => {
@@ -55,45 +55,57 @@ const ContactCard = (props: {
     name: string;
     description: string;
 }) => {
-    return <Card className="p-3 bg-accent/10 flex items-center gap-4">
-        <div className="relative">
-            <img src={props.image} alt={props.name} className="w-10 h-10 rounded-full object-contain"/>
-            <img src={props.mediumImage} alt={props.name} className="w-4 h-4 absolute -bottom-1 -right-1"/>
-        </div>
-        <div className="mr-auto">
-            <div className="flex items-center gap-2">
-                <p className="text-lg font-semibold">{props.name}</p>
+    return (
+        <div className="w-full bg-transparent border-b border-gray-700 hover:bg-gray-800/30 transition-colors">
+            <div className="flex items-center justify-between p-4">
+                <div className="flex items-center gap-3">
+                    <div className="relative">
+                        <img src={props.image} alt="" className="w-12 h-12 rounded-full object-cover"/>
+                        <div className="absolute bottom-0 right-0 p-0.5 bg-black rounded-full border border-gray-600">
+                            <img src={props.mediumImage} alt="" className="w-5 h-5 object-contain"/>
+                        </div>
+                    </div>
+                    <div>
+                        <p className="text-base text-gray-300">{props.name}</p>
+                        <p className="text-sm text-gray-500">{props.description}</p>
+                    </div>
+                </div>
+                <ArrowUpRight size={18} className="text-gray-500"/>
             </div>
-            <p className="text-xs text-muted-foreground">{props.description}</p>
         </div>
-        <ArrowUpRight size={16}/>
-    </Card>
+    );
 }
 
 const SIDE_PROJECTS: SideProjectProps[] = [
     {
-        Logo: Code,
+        Logo: Music2, // Pour Spotify UI
         title: "Spot ui",
         description: "A clone of the mobile app of Spotify",
         url: "https://github.com/Darrylwin/spot__ui",
     },
     {
-        Logo: StickyNote,
+        Logo: MessagesSquare, // Pour l'app de chat
         title: "Minimal chat",
         description: "A minimal chat app",
         url: "https://github.com/Darrylwin/minimal_chat",
     },
     {
-        Logo: Rss,
+        Logo: UtensilsCrossed, // Pour l'app de livraison de nourriture
         title: "Food delivery",
-        description: "A Food delivry app",
+        description: "A Food delivery app",
         url: "https://github.com/Darrylwin/food_delivery",
     },
     {
-        Logo: MessageCircle,
+        Logo: Wallet, // Pour l'app bancaire
         title: "Banking app",
         description: "An app for managing paiements",
         url: "https://github.com/Darrylwin/DjangoExposer",
+    },
+    {
+        Logo: CloudSun, // Pour l'app de meteo
+        title: "Weather app",
+        description: "A meteo application",
+        url: "https://github.com/Darrylwin/weather_app",
     },
 ];
 
