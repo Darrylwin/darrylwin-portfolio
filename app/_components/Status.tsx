@@ -1,6 +1,6 @@
 import {Section} from "@/app/_components/Section";
 import {Card} from "@/components/ui/card";
-import {CloudSun, Music2, MessagesSquare, UtensilsCrossed, Wallet} from "lucide-react";
+import {CloudSun, Music2, MessagesSquare, Brain, Globe, Lock, UtensilsCrossed} from "lucide-react";
 import { SideProject, SideProjectProps } from "./SideProject";
 import { ContactCard } from "./ContactCard";
 import { Work, WorkProps } from "./Work";
@@ -54,44 +54,50 @@ export const Status = () => {
 }
 
 const SIDE_PROJECTS: SideProjectProps[] = [
-    {
-        Logo: Music2, // Pour Spotify UI
-        title: "Spot ui",
-        description: "A clone of the mobile app of Spotify",
-        url: "https://github.com/Darrylwin/spot__ui",
-    },
-    {
-        Logo: MessagesSquare, // Pour l'app de chat
-        title: "Minimal chat",
-        description: "A minimal realtime chat application",
-        url: "https://github.com/Darrylwin/minimal_chat",
-    },
-    {
-        Logo: UtensilsCrossed, // Pour l'app de livraison de nourriture
-        title: "Food delivery",
-        description: "A Food delivery application",
-        url: "https://github.com/Darrylwin/food_delivery",
-    },
-    {
-        Logo: Wallet, // Pour l'app bancaire
-        title: "Ega bank",
-        description: "An application for managing payments",
-        url: "https://github.com/Darrylwin/DjangoExposer",
-    },
-    {
-        Logo: CloudSun, // Pour l'app de meteo
-        title: "Weather app",
-        description: "A weather tracking application",
-        url: "https://github.com/Darrylwin/weather_app",
-    },
-    {
-        Logo: CloudSun, // Pour l'app de meteo
-        title: "Weather app",
-        description: "A weather tracking application",
-        url: "https://github.com/Darrylwin/weather_app",
-    },
-
+  {
+    Logo: Lock,
+    title: "SecVault",
+    description: "A secure mobile vault for sharing private files with controlled access.",
+    url: "https://github.com/Darrylwin/Secvault",
+  },
+  {
+    Logo: Brain,
+    title: "Orientys",
+    description: "An AI-driven orientation platform for students in the digital field.",
+    url: "https://orientys.acancampus.com",
+  },
+  {
+    Logo: Globe,
+    title: "Wuas net",
+    description: "A classified ads platform built for a real client with validation workflows.",
+    url: "https://wuas.net",
+  },
+  {
+    Logo: UtensilsCrossed,
+    title: "Foodie",
+    description: "A food delivery application.",
+    url: "https://www.linkedin.com/posts/darryl-win-logossou_flutter-supabase-mvp-activity-7304823172762071040-Oomb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEnDcTsBtq1rpHagrdvd1uPwY4-7Pc3j2R0",
+  },
+  {
+    Logo: MessagesSquare,
+    title: "Minimal Chat",
+    description: "A minimal real-time messaging application.",
+    url: "https://github.com/Darrylwin/minimal_chat",
+  },
+  {
+    Logo: Music2,
+    title: "Spot UI",
+    description: "A mobile UI clone inspired by Spotify.",
+    url: "https://www.linkedin.com/posts/darryl-win-logossou_apprentissage-daezveloppementpersonnel-technologie-activity-7231609204556406784-fmN2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEnDcTsBtq1rpHagrdvd1uPwY4-7Pc3j2R0",
+  },
+  {
+    Logo: CloudSun,
+    title: "Weatherly",
+    description: "A clean and simple weather tracking application.",
+    url: "https://github.com/Darrylwin/weather_app",
+  },
 ];
+
 
 const WORKS: WorkProps[] = [
     {
