@@ -11,7 +11,9 @@ export type WorkProps = {
 export const Work = (props: WorkProps) => {
   return (
     <Link
-      href={props.url} target="_blank" rel="noopener noreferrer"
+      href={props.url || "#"}
+      target={props.url ? "_blank" : undefined}
+      rel={props.url ? "noopener noreferrer" : undefined}
       className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors duration-200 p-1 rounded-sm"
     >
       <img

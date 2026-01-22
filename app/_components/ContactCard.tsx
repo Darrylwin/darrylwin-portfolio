@@ -25,7 +25,10 @@ export const ContactCard = (props: {
                             <p className="text-xs text-muted-foreground">{props.description}</p>
                         </div>
                     </div>
-                    <ArrowUpRight size={16} />
+                    <ArrowUpRight
+                        size={16}
+                        className="transform transition-transform duration-200 ease-out group-hover:translate-x-1 group-hover:scale-105"
+                    />
                 </div>
             </Card>
         </Link>
