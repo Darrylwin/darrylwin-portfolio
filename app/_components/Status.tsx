@@ -45,7 +45,7 @@ export const Status = () => {
                 <ContactCard
                     image="https://avatars.githubusercontent.com/u/152020049?v=4"
                     mediumImage="https://imgs.search.brave.com/-qbPyJOKJWYj7H1DezyMrgBAdYPgoMHEAOQX0JYBDa0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9lbWVk/aWExLm5ocy53YWxl/cy9OV0lTV2FsZXNO/SFNVSy9jYWNoZS9m/aWxlLzdEOUE0NTUx/LTdCMkEtNEMyNC04/RUJBQzRBQ0M4NzBB/RkUwX21lZGl1bS5w/bmc"
-                    name={'Logossou Darryl-win'} description="500 connections"
+                    name={'Darryl-win Logossou'} description="500 connections"
                     url="https://www.linkedin.com/in/darryl-win-logossou"
                 />
             </Card>
@@ -103,7 +103,7 @@ const WORKS: WorkProps[] = [
     },
     {
         image: 'acan.png',
-        title: 'Digital Academy',
+        title: 'ACAN',
         role: 'Web Developer',
         date: 'June 2025 - January 2026',
         url: "https://acancampus.com"

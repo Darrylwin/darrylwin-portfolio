@@ -6,7 +6,7 @@ import { Code } from './Code';
 export const Hero = () => {
     return (<Section className="flex max-md:flex-col items-start gap-4">
         <div className="flex-[3] w-full flex flex-col gap-2">
-            <h2 className="font-bold font-caption text-5xl text-primary">Logossou Darryl-win</h2>
+            <h2 className="font-bold font-caption text-5xl text-primary">Darryl-win Logossou</h2>
             <h3 className="text-3xl font-caption">Full-Stack Web and Mobile Developer</h3>
             <p className="text-base">I am a young developer in computer schience degree at African Institute of Informatics - Togo, love developing
                 with {" "}

@@ -14,7 +14,7 @@ export const ContactCard = (props: {
             <Card className="w-full hover:bg-accent/50 transition-colors duration-200 p-1 rounded-sm group">
                 <div className="flex items-center justify-between gap-4 w-full">
                     <div className="flex items-center gap-3">
-                        <div className="relative">
+                        <div className="relative w-10 h-10">
                             <img src={props.image} alt="" className="w-10 h-10 rounded-md object-contain"/>
                             <div className="absolute bottom-0 right-0 p-0.5 bg-transparent rounded-full">
                                 <img src={props.mediumImage} alt="" className="w-4 h-4 object-contain"/>

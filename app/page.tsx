@@ -4,6 +4,7 @@ import {Spacing} from "@/app/_components/Spacing";
 import {Status} from "@/app/_components/Status";
 import { Skills } from "./_components/Skills";
 import { Contact } from "./_components/Contact";
+import { Footer } from "./_components/Footer";
 
 export default function Home() {
     return <main>
@@ -17,5 +18,6 @@ export default function Home() {
         <Spacing size="md"/>
         <Contact></Contact>
         <Spacing size="md"/>
+        <Footer></Footer>
     </main>
 }
