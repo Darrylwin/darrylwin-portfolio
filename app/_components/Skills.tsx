@@ -1,29 +1,25 @@
-import { Badge, Section } from "lucide-react";
 import { FlutterIcon } from "../icons/FlutterIcon";
 import { Code } from "./Code";
 import { NextJsIcon } from "../icons/NextJsIcon";
 import { ClaudeIcon } from "../icons/ClaudeIcon";
+import { Section } from "./Section";
 
 export const Skills = () => {
   return (
     <Section className="flex flex-col items-start gap-4">
-      <Badge>Skills</Badge>
       <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0">
         I love working on
       </h2>
       <div className="flex max-md:flex-col gap-4">
         <div className="flex flex-col gap-2">
-          <FlutterIcon
-            size={42}
-            className="animate-spin"
-            style={{ animationDuration: "10s" }}
-          />
+          <FlutterIcon size={42} />
           <h3 className="text-2xl font-semibold tracking-tight">Flutter</h3>
           <p className="text-muted-foreground text-sm">
             My main framework is <Code>Flutter</Code>. I also use{" "}
             <Code>Next.Js</Code> as a frontend framework for web applications,
-            <Code>Laravel</Code>, <Code>Nest.Js</Code> and <Code>Spring</Code>{" "}
-            as backend frameworks depending on project context.
+            <Code>Laravel</Code>, <Code>Nest.Js</Code> and{" "}
+            <Code>Spring boot</Code> as backend frameworks depending on project
+            context.
           </p>
         </div>
 

@@ -23,7 +23,7 @@ export const FlutterIcon = (
           id="linearGradient-1"
         >
           <stop stopColor="currentColor" offset="0%"></stop>
-          <stop stopColor="currentColor" stop-opacity="0" offset="100%"></stop>
+          <stop stopColor="currentColor" stopOpacity="0" offset="100%"></stop>
         </linearGradient>
       </defs>
       <g>
@@ -44,7 +44,7 @@ export const FlutterIcon = (
           points="71.5995742 230.364072 120.401085 181.562561 169.842046 230.821136 121.132827 279.531454"
         ></polygon>
         <polygon
-          fill-opacity="0.8"
+          fillOpacity="0.8"
           fill="url(#linearGradient-1)"
           points="121.132827 279.531454 161.692896 266.072227 165.721875 234.941308"
         ></polygon>
