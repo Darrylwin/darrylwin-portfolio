@@ -1,5 +1,6 @@
 import {Section} from './Section';
 import {FlutterIcon} from '../icons/FlutterIcon';
+import {NextJsIcon} from '../icons/NextJsIcon';
 import {ComponentPropsWithoutRef} from "react";
 import {cn} from "@/lib/utils";
 import Link from "next/link";
@@ -13,19 +14,21 @@ export const Hero = () => {
     return (<Section className="flex max-md:flex-col items-start gap-4">
         <div className="flex-[3] w-full flex flex-col gap-2">
             <h2 className="font-bold font-caption text-5xl text-primary">Logossou Darryl-win</h2>
-            <h3 className="text-3xl font-caption">Software Engineer</h3>
-            <p className="text-base">I am a young developer in engineering training at IAI-Togo, love developing
+            <h3 className="text-3xl font-caption">Full-Stack Web and Mobile Developer</h3>
+            <p className="text-base">I am a young developer in computer schience degree at African Institute of Informatics - Togo, love developing
                 with {" "}
                 <Link href="https://flutter.dev">
                     <Code className="inline-flex items-center gap-1">
                         <FlutterIcon size={12} className="inline"/> Flutter
                     </Code>
-                </Link>, living in {" "}
+                </Link>
+                . Living in {" "}
                 <Code className="inline-flex items-center gap-1">
                     <img
                         src="https://imgs.search.brave.com/O_I3FloMjp-HA7uAUe-9gsYTV-t58vFAEHagNDZfCUA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/YnJpdGFubmljYS5j/b20vNzQvNTA3NC0w/NTAtNEJFN0I5Q0Iv/RmxhZy1Ub2dvLmpw/Zw"
                         alt="togo flag"
                         style={{width: 16, height: "auto"}}
+                        className="inline"
                     /> Togo
                 </Code>
                 , Lomé.

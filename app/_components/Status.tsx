@@ -36,7 +36,7 @@ export const Status = () => {
                 <p className="text-lg text-muted-foreground">Contact me</p>
                 <ContactCard
                     image="https://avatars.githubusercontent.com/u/152020049?v=4"
-                    mediumImage='https://imgs.search.brave.com/CNRbeBm5CtoHq7I5qa_MxoFeYuisjeVzC7omXyes0Jw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9mcmVl/bG9nb3BuZy5jb20v/aW1hZ2VzL2FsbF9p/bWcvMTY5MDY0MzU5/MXR3aXR0ZXIteC1s/b2dvLXBuZy5wbmc'
+                    mediumImage='https://www.vecteezy.com/free-vector/github-logo'
                     name={'@Darrylwin'} description="20"
                 />
                 <ContactCard

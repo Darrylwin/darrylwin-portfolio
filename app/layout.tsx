@@ -22,7 +22,7 @@ const AnekTelugu = Anek_Telugu({
 // });
 
 export const metadata: Metadata = {
-    title: "Darryl-win Logossou . Software Engineer",
+    title: "Darryl-win Logossou . Full-stack web and mobile developer",
     description: "Flutter Fullstack Developer",
 };
 
