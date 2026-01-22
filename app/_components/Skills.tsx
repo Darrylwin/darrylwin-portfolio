@@ -11,7 +11,7 @@ export const Skills = () => {
         I love working on
       </h2>
       <div className="flex max-md:flex-col gap-4">
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 flex-1">
           <FlutterIcon size={42} />
           <h3 className="text-2xl font-semibold tracking-tight">Flutter</h3>
           <p className="text-muted-foreground text-sm">
@@ -23,7 +23,7 @@ export const Skills = () => {
           </p>
         </div>
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 flex-1">
           <NextJsIcon size={42} style={{ animationDuration: "10s" }} />
           <h3 className="text-2xl font-semibold tracking-tight">Next.Js</h3>
           <p className="text-muted-foreground text-sm">

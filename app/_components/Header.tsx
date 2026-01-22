@@ -15,7 +15,7 @@ export const Header = () => {
                           className={cn(buttonVariants({variant: 'outline'}), "size-6 p-0")}>
                         <GithubIcon size={12} className="text-foreground"></GithubIcon>
                     </Link>
-                    <Link href="https://www.linkedin.com/in/darryl-win-logossou/"
+                    <Link href="https://www.linkedin.com/in/darryl-win-logossou"
                           className={cn(buttonVariants({variant: 'outline'}), "size-6 p-0")}>
                         <LinkedInIcon size={12} className="text-foreground"></LinkedInIcon>
                     </Link>

@@ -1,7 +1,9 @@
 import {Section} from "@/app/_components/Section";
 import {Card} from "@/components/ui/card";
-import {ArrowUpRight, LucideIcon, CloudSun, Music2, MessagesSquare, UtensilsCrossed, Wallet} from "lucide-react";
-import Link from "next/link";
+import {CloudSun, Music2, MessagesSquare, UtensilsCrossed, Wallet} from "lucide-react";
+import { SideProject, SideProjectProps } from "./SideProject";
+import { ContactCard } from "./ContactCard";
+import { Work, WorkProps } from "./Work";
 
 export const Status = () => {
     return <Section className="flex max-md:flex-col items-start gap-4">
@@ -38,42 +40,17 @@ export const Status = () => {
                     image="https://avatars.githubusercontent.com/u/152020049?v=4"
                     mediumImage='https://imgs.search.brave.com/bncIify__JQ7O0jcPgJdClApUSAs7hc9SHKjjD6T5FY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9yYXcu/Z2l0aHVidXNlcmNv/bnRlbnQuY29tL2xv/YmVodWIvbG9iZS1p/Y29ucy9yZWZzL2hl/YWRzL21hc3Rlci9w/YWNrYWdlcy9zdGF0/aWMtcG5nL2Rhcmsv/Z2l0aHViLnBuZw'
                     name={'@Darrylwin'} description="20 followers"
+                    url="https://github.com/Darrylwin"
                 />
                 <ContactCard
                     image="https://avatars.githubusercontent.com/u/152020049?v=4"
                     mediumImage="https://imgs.search.brave.com/-qbPyJOKJWYj7H1DezyMrgBAdYPgoMHEAOQX0JYBDa0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9lbWVk/aWExLm5ocy53YWxl/cy9OV0lTV2FsZXNO/SFNVSy9jYWNoZS9m/aWxlLzdEOUE0NTUx/LTdCMkEtNEMyNC04/RUJBQzRBQ0M4NzBB/RkUwX21lZGl1bS5w/bmc"
                     name={'Logossou Darryl-win'} description="500 connections"
+                    url="https://www.linkedin.com/in/darryl-win-logossou"
                 />
             </Card>
         </div>
     </Section>
-}
-
-const ContactCard = (props: {
-    image: string;
-    mediumImage: string;
-    name: string;
-    description: string;
-}) => {
-    return (
-        <Card className="w-full hover:bg-accent/50 transition-colors duration-200 p-1 rounded-sm group">
-            <div className="flex items-center justify-between gap-4 w-full">
-                <div className="flex items-center gap-3">
-                    <div className="relative">
-                        <img src={props.image} alt="" className="w-10 h-10 rounded-md object-contain"/>
-                        <div className="absolute bottom-0 right-0 p-0.5 bg-transparent rounded-full">
-                            <img src={props.mediumImage} alt="" className="w-4 h-4 object-contain"/>
-                        </div>
-                    </div>
-                    <div>
-                        <p className="text-lg font-semibold">{props.name}</p>
-                        <p className="text-xs text-muted-foreground">{props.description}</p>
-                    </div>
-                </div>
-                <ArrowUpRight size={16} />
-            </div>
-        </Card>
-    );
 }
 
 const SIDE_PROJECTS: SideProjectProps[] = [
@@ -113,35 +90,8 @@ const SIDE_PROJECTS: SideProjectProps[] = [
         description: "A weather tracking application",
         url: "https://github.com/Darrylwin/weather_app",
     },
+
 ];
-
-type SideProjectProps = {
-    Logo: LucideIcon;
-    title: string;
-    description: string;
-    url: string;
-}
-
-const SideProject = (props: SideProjectProps) => {
-    return <Link href={props.url}
-                 className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors duration-200 p-1 rounded-sm">
-    <span className="bg-accent text-accent-foreground p-3 rounded-sm">
-        <props.Logo size={16}/>
-    </span>
-        <div>
-            <p className="text-lg font-semibold">{props.title}</p>
-            <p className="text-sm text-muted-foreground">{props.description}</p>
-        </div>
-    </Link>
-}
-
-type WorkProps = {
-    image: string;
-    title: string;
-    role: string;
-    url: string;
-    date: string;
-}
 
 const WORKS: WorkProps[] = [
     {
@@ -159,18 +109,3 @@ const WORKS: WorkProps[] = [
         url: "https://acancampus.com"
     },
 ];
-
-const Work = (props: WorkProps) => {
-    return <Link href={props.url}
-                 className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors duration-200 p-1 rounded-sm">
-        <img src={props.image} alt={props.title} className="w-10 h-10 object-contain rounded-md"/>
-
-        <div className="mr-auto">
-            <div className="flex-initial items-center gap-2">
-                <p className="text-lg font-semibold">{props.title}</p>
-            </div>
-            <p className="text-xs text-muted-foreground">{props.role}</p>
-        </div>
-        <p className="text-xs text-end text-muted-foreground">{props.date}</p>
-    </Link>
-}
