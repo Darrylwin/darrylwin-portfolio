@@ -17,8 +17,8 @@ export const Skills = () => {
           <FlutterIcon size={42} />
           <h3 className="text-2xl font-semibold tracking-tight">Flutter</h3>
           <p className="text-muted-foreground text-sm">
-            My main framework is <Code>Flutter</Code>. I also use{" "}
-            <Code>Next.Js</Code> as a frontend framework for web applications,
+            My main framework is <Code>Flutter</Code> for mobile development. I also use{" "}
+            <Code>Next.Js</Code> as a frontend framework for web interfaces and,
             <Code>Nest.Js</Code> and <Code>Laravel</Code> as backend frameworks.
           </p>
         </div>
