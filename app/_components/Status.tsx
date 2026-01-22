@@ -7,7 +7,7 @@ export const Status = () => {
     return <Section className="flex max-md:flex-col items-start gap-4">
         <div className="flex-[3] w-full">
             <Card className="w-full p-4 flex flex-col gap-2">
-                <p className="text-lg text-muted-foreground">Fun, side projects</p>
+                <p className="text-lg text-muted-foreground">Fun projects</p>
                 <div className="flex flex-col gap-4">
                     {SIDE_PROJECTS.map((project, index) => (
                         <SideProject
@@ -37,12 +37,12 @@ export const Status = () => {
                 <ContactCard
                     image="https://avatars.githubusercontent.com/u/152020049?v=4"
                     mediumImage='https://www.vecteezy.com/free-vector/github-logo'
-                    name={'@Darrylwin'} description="20"
+                    name={'@Darrylwin'} description="20 followers"
                 />
                 <ContactCard
                     image="https://avatars.githubusercontent.com/u/152020049?v=4"
                     mediumImage="https://imgs.search.brave.com/-qbPyJOKJWYj7H1DezyMrgBAdYPgoMHEAOQX0JYBDa0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9lbWVk/aWExLm5ocy53YWxl/cy9OV0lTV2FsZXNO/SFNVSy9jYWNoZS9m/aWxlLzdEOUE0NTUx/LTdCMkEtNEMyNC04/RUJBQzRBQ0M4NzBB/RkUwX21lZGl1bS5w/bmc"
-                    name={'Logossou Darryl-win'} description="50"
+                    name={'Logossou Darryl-win'} description="500 connections"
                 />
             </Card>
         </div>
@@ -56,24 +56,23 @@ const ContactCard = (props: {
     description: string;
 }) => {
     return (
-        <div
-            className="w-full bg-transparent border-b border-gray-700 hover:bg-gray-800/30 transition-colors duration-200">
-            <div className="flex items-center justify-between p-4">
+        <Card className="w-full hover:bg-accent/50 transition-colors duration-200 p-1 rounded-sm group">
+            <div className="flex items-center justify-between gap-4 w-full">
                 <div className="flex items-center gap-3">
                     <div className="relative">
-                        <img src={props.image} alt="" className="w-12 h-12 rounded-full object-cover"/>
+                        <img src={props.image} alt="" className="w-10 h-10 rounded-md object-contain"/>
                         <div className="absolute bottom-0 right-0 p-0.5 bg-transparent rounded-full">
-                            <img src={props.mediumImage} alt="" className="w-5 h-5 object-contain"/>
+                            <img src={props.mediumImage} alt="" className="w-4 h-4 object-contain"/>
                         </div>
                     </div>
                     <div>
-                        <p className="text-base text-gray-300">{props.name}</p>
-                        <p className="text-sm text-gray-500">{props.description}</p>
+                        <p className="text-lg font-semibold">{props.name}</p>
+                        <p className="text-xs text-muted-foreground">{props.description}</p>
                     </div>
                 </div>
-                <ArrowUpRight size={18} className="text-gray-500"/>
+                <ArrowUpRight size={16} />
             </div>
-        </div>
+        </Card>
     );
 }
 
@@ -87,25 +86,31 @@ const SIDE_PROJECTS: SideProjectProps[] = [
     {
         Logo: MessagesSquare, // Pour l'app de chat
         title: "Minimal chat",
-        description: "A minimal chat app",
+        description: "A minimal realtime chat application",
         url: "https://github.com/Darrylwin/minimal_chat",
     },
     {
         Logo: UtensilsCrossed, // Pour l'app de livraison de nourriture
         title: "Food delivery",
-        description: "A Food delivery app",
+        description: "A Food delivery application",
         url: "https://github.com/Darrylwin/food_delivery",
     },
     {
         Logo: Wallet, // Pour l'app bancaire
-        title: "Banking app",
-        description: "An app for managing paiements",
+        title: "Ega bank",
+        description: "An application for managing payments",
         url: "https://github.com/Darrylwin/DjangoExposer",
     },
     {
         Logo: CloudSun, // Pour l'app de meteo
         title: "Weather app",
-        description: "A meteo application",
+        description: "A weather tracking application",
+        url: "https://github.com/Darrylwin/weather_app",
+    },
+    {
+        Logo: CloudSun, // Pour l'app de meteo
+        title: "Weather app",
+        description: "A weather tracking application",
         url: "https://github.com/Darrylwin/weather_app",
     },
 ];
@@ -140,12 +145,19 @@ type WorkProps = {
 
 const WORKS: WorkProps[] = [
     {
-        image: 'https://imgs.search.brave.com/N9jywr_ShWSoik-WDqt-LBV9MA0JyIYfDqdroKl1eZg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuZ29vZGZpcm1z/LmNvL3NlcnZpY2Vz/L21lZGl1bS9jb2Rl/bHlueC1zb2Z0d2Fy/ZS5wbmc',
-        title: 'Codelynx',
-        role: 'Funder',
-        date: '2023 - Present',
-        url: "https://codelyns.dev"
-    }
+        image: 'https://www.linkedin.com/in/darryl-win-logossou/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B%2FINz23lOQN26PPSoP1BMUg%3D%3D',
+        title: 'Cyber AxD',
+        role: 'Mobile Developer Intern',
+        date: 'March 2025 - May 2025',
+        url: ""
+    },
+    {
+        image: 'acan.png',
+        title: 'Digital Academy',
+        role: 'Web Developer',
+        date: 'June 2025 - January 2026',
+        url: "https://acancampus.com"
+    },
 ];
 
 const Work = (props: WorkProps) => {
