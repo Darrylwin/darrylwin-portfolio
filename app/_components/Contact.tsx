@@ -9,8 +9,8 @@ export const Contact = () => {
       </h2>
       <div className="flex max-md:flex-col gap-4 w-full">
         <ContactCard
-          image="https://avatars.githubusercontent.com/u/152020049?v=4"
-          mediumImage="https://imgs.search.brave.com/KmRpD321TmE0JQpHaWXLrhFylED1swYNhGJSxKGnuJE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxMy8w/MS8yOS8yMi81My95/YWhvby03NjY4NF82/NDAucG5n"
+          image="profile.jpeg"
+          mediumImage="https://imgs.search.brave.com/MtB2TLd0EYJ2DmcyzZvFKhiUdIPS4-Hr2P0ONXFoWiU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjkv/Mjg0Lzk3Mi9zbWFs/bC9nbWFpbC1sb2dv/LWdvb2dsZS1wcm9k/dWN0LWljb24tb2Yt/bG9nb3R5cGUtZ21h/aWwtbmV3LWdvb2ds/ZS1nbWFpbC1hcHBs/aWNhdGlvbi1pY29u/LWdtYWlsLWlzLXBv/cHVsYXItaW50ZXJu/ZXQtb25saW5lLWUt/bWFpbC1mcmVlLXZl/Y3Rvci5qcGc"
           name={"logossoudarryl@yahoo.com"}
           description="Email me for any inquiries"
           url="mailto:logossoudarryl@yahoo.com"
@@ -24,7 +24,7 @@ export const Contact = () => {
         />
         
         <ContactCard
-          image="https://avatars.githubusercontent.com/u/152020049?v=4"
+          image="profile.jpeg"
           mediumImage="https://imgs.search.brave.com/-qbPyJOKJWYj7H1DezyMrgBAdYPgoMHEAOQX0JYBDa0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9lbWVk/aWExLm5ocy53YWxl/cy9OV0lTV2FsZXNO/SFNVSy9jYWNoZS9m/aWxlLzdEOUE0NTUx/LTdCMkEtNEMyNC04/RUJBQzRBQ0M4NzBB/RkUwX21lZGl1bS5w/bmc"
           name={"Darryl-win L."}
           description="500 connections"

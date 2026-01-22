@@ -11,19 +11,9 @@ const AnekTelugu = Anek_Telugu({
     display: 'swap',
 });
 
-// const geistSans = Geist({
-//     variable: "--font-geist-sans",
-//     subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//     variable: "--font-geist-mono",
-//     subsets: ["latin"],
-// });
-
 export const metadata: Metadata = {
     title: "Darryl-win Logossou . Full-stack web and mobile developer",
-    description: "Flutter Fullstack Developer",
+    description: "Fullstack Developer",
 };
 
 // app/layout.tsx
@@ -32,7 +22,6 @@ export default function RootLayout({children}: Readonly<{ children: React.ReactN
         <html lang="en" className='h-full'>
         <body className={cn(
             GeistSans.variable,
-            // GeistMono.variable,
             AnekTelugu.variable,
             "font-sans h-full bg-background text-foreground"
         )}>

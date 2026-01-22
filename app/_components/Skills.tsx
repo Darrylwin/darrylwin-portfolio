@@ -3,6 +3,8 @@ import { Code } from "./Code";
 import { NextJsIcon } from "../icons/NextJsIcon";
 import { ClaudeIcon } from "../icons/ClaudeIcon";
 import { Section } from "./Section";
+import { NestJsIcon } from "../icons/NestJsIcon";
+import { LaravelIcon } from "../icons/LaravelIcon";
 
 export const Skills = () => {
   return (
@@ -17,9 +19,7 @@ export const Skills = () => {
           <p className="text-muted-foreground text-sm">
             My main framework is <Code>Flutter</Code>. I also use{" "}
             <Code>Next.Js</Code> as a frontend framework for web applications,
-            <Code>Laravel</Code>, <Code>Nest.Js</Code> and{" "}
-            <Code>Spring boot</Code> as backend frameworks depending on project
-            context.
+            <Code>Nest.Js</Code> and <Code>Laravel</Code> as backend frameworks.
           </p>
         </div>
 
@@ -27,8 +27,20 @@ export const Skills = () => {
           <NextJsIcon size={42} style={{ animationDuration: "10s" }} />
           <h3 className="text-2xl font-semibold tracking-tight">Next.Js</h3>
           <p className="text-muted-foreground text-sm">
-            I can create <u>beautiful</u> and <u>performant</u> web applications
+            I can create <u>beautiful</u> and <u>performant</u> web interfaces
             using <Code>Next.Js</Code>
+          </p>
+        </div>
+        
+        <div className="flex flex-col gap-2 flex-1">
+          <div className="flex items-center gap-3">
+            <NestJsIcon size={42} style={{ animationDuration: "10s" }} />
+            <LaravelIcon size={42} style={{ animationDuration: "10s" }} />
+          </div>
+          <h3 className="text-2xl font-semibold tracking-tight">Nest.Js and Laravel</h3>
+          <p className="text-muted-foreground text-sm">
+            I can create <u>efficient</u>, <u>robust</u> and <u>scalable</u> backend applications
+            using <Code>Nest.Js</Code> and <Code>Laravel</Code>.
           </p>
         </div>
 

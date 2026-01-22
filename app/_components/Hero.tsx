@@ -28,12 +28,14 @@ export const Hero = () => {
             </p>
         </div>
         <div className="flex-[2] max-md:m-auto ml-auto">
-            <img
-                src="https://avatars.githubusercontent.com/u/152020049?v=4"
-                className="w-full h-auto max-w-xs max-md:w-56 rounded-full"
-                height="160"
-                alt="Darryl-win's picture"
-            />
+            <div className="w-full max-w-xs aspect-square max-md:w-56 rounded-full overflow-hidden">
+                <img
+                    src="profile.jpeg"
+                    className="w-full h-full object-cover"
+                    alt="Darryl-win's picture"
+                    loading="lazy"
+                />
+            </div>
         </div>
     </Section>);
 }
