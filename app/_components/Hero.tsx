@@ -1,14 +1,7 @@
 import {Section} from './Section';
 import {FlutterIcon} from '../icons/FlutterIcon';
-import {NextJsIcon} from '../icons/NextJsIcon';
-import {ComponentPropsWithoutRef} from "react";
-import {cn} from "@/lib/utils";
 import Link from "next/link";
-
-const Code = ({className, ...props}: ComponentPropsWithoutRef<"span">) => {
-    return <span
-        className={cn("font-mono border bg-accent hover:bg-accent/50 transition-colors border-accent px-1 py-0.5 rounded-sm text-primary", className)} {...props}/>
-}
+import { Code } from './Code';
 
 export const Hero = () => {
     return (<Section className="flex max-md:flex-col items-start gap-4">

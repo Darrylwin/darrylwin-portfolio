@@ -10,7 +10,6 @@ export const NextJsIcon = (
       viewBox="0 0 256 256"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
       preserveAspectRatio="xMidYMid"
       {...props}
     >
@@ -40,7 +39,6 @@ export const NextJsIcon = (
       </defs>
       <g>
         <mask id="mask-2" fill="white">
-          <use xlink:href="#path-1"></use>
         </mask>
         <g mask="url(#mask-2)">
           <circle fill="currentColor" cx="128" cy="128" r="128"></circle>

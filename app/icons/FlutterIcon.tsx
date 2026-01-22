@@ -22,8 +22,8 @@ export const FlutterIcon = (
           y2="52.9192657%"
           id="linearGradient-1"
         >
-          <stop stop-color="currentColor" offset="0%"></stop>
-          <stop stop-color="currentColor" stop-opacity="0" offset="100%"></stop>
+          <stop stopColor="currentColor" offset="0%"></stop>
+          <stop stopColor="currentColor" stop-opacity="0" offset="100%"></stop>
         </linearGradient>
       </defs>
       <g>
