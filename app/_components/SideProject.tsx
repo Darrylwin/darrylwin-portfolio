@@ -9,7 +9,7 @@ export type SideProjectProps = {
 }
 
 export const SideProject = (props: SideProjectProps) => {
-    return <Link href={props.url}
+    return <Link href={props.url} target="_blank" rel="noopener noreferrer"
                  className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors duration-200 p-1 rounded-sm">
     <span className="bg-accent text-accent-foreground p-3 rounded-sm">
         <props.Logo size={16}/>

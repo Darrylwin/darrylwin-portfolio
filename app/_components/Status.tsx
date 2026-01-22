@@ -45,7 +45,7 @@ export const Status = () => {
                 <ContactCard
                     image="https://avatars.githubusercontent.com/u/152020049?v=4"
                     mediumImage='https://imgs.search.brave.com/bncIify__JQ7O0jcPgJdClApUSAs7hc9SHKjjD6T5FY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9yYXcu/Z2l0aHVidXNlcmNv/bnRlbnQuY29tL2xv/YmVodWIvbG9iZS1p/Y29ucy9yZWZzL2hl/YWRzL21hc3Rlci9w/YWNrYWdlcy9zdGF0/aWMtcG5nL2Rhcmsv/Z2l0aHViLnBuZw'
-                    name={'@Darrylwin'} description="20 followers"
+                    name={'@Darrylwin'} description="30 followers"
                     url="https://github.com/Darrylwin"
                 />
             </Card>
@@ -95,17 +95,17 @@ const SIDE_PROJECTS: SideProjectProps[] = [
 
 const WORKS: WorkProps[] = [
     {
-        image: 'https://www.linkedin.com/in/darryl-win-logossou/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B%2FINz23lOQN26PPSoP1BMUg%3D%3D',
-        title: 'Cyber AxD',
-        role: 'Mobile Developer Intern',
-        date: 'March 2025 - May 2025',
-        url: ""
-    },
-    {
         image: 'acan.png',
         title: 'ACAN',
         role: 'Web Developer',
         date: 'June 2025 - January 2026',
         url: "https://acancampus.com"
+    },
+    {
+        image: 'https://www.linkedin.com/in/darryl-win-logossou/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B%2FINz23lOQN26PPSoP1BMUg%3D%3D',
+        title: 'Cyber AxD',
+        role: 'Mobile Developer Intern',
+        date: 'March 2025 - May 2025',
+        url: ""
     },
 ];
