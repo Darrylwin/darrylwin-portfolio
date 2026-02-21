@@ -33,12 +33,12 @@ export const Skills = () => {
         <div className="flex flex-col gap-2 flex-1">
           <div className="flex items-center gap-3">
             <NestJsIcon size={42} style={{ animationDuration: "10s" }} />
-            <LaravelIcon size={42} style={{ animationDuration: "10s" }} />
+            {/* <LaravelIcon size={42} style={{ animationDuration: "10s" }} /> */}
           </div>
-          <h3 className="text-2xl font-semibold tracking-tight">Nest.Js and Laravel</h3>
+          <h3 className="text-2xl font-semibold tracking-tight">Nest.Js</h3>
           <p className="text-muted-foreground text-sm">
             I can create <u>efficient</u> and <u>scalable</u> backend applications
-            using <Code>Nest.Js</Code> and <Code>Laravel</Code>.
+            using <Code>Nest.Js</Code>.
           </p>
         </div>
 
