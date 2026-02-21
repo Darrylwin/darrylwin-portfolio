@@ -4,7 +4,7 @@ import { NextJsIcon } from "../icons/NextJsIcon";
 import { ClaudeIcon } from "../icons/ClaudeIcon";
 import { Section } from "./Section";
 import { NestJsIcon } from "../icons/NestJsIcon";
-import { LaravelIcon } from "../icons/LaravelIcon";
+// import { LaravelIcon } from "../icons/LaravelIcon";
 
 export const Skills = () => {
   return (
