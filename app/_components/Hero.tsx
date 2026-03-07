@@ -8,7 +8,7 @@ export const Hero = () => {
     return (<Section className="flex max-md:flex-col items-start gap-4">
         <div className="flex-[3] w-full flex flex-col gap-2">
             <h2 className="font-bold font-caption text-5xl text-primary">Darryl-win Logossou</h2>
-            <h3 className="text-3xl font-caption">Full-Stack Web and Mobile Developer</h3>
+            <h3 className="text-3xl font-caption">Full-Stack Mobile and Web Developer</h3>
             <p className="text-base">I am a young developer in computer science degree at Institut Africain d&apos;Informatique - Togo, love developing
                 with {" "}
                 <Link href="https://flutter.dev">

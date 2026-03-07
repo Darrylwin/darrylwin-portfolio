@@ -12,7 +12,7 @@ const AnekTelugu = Anek_Telugu({
 });
 
 export const metadata: Metadata = {
-    title: "Darryl-win Logossou . Full-stack web and mobile developer",
+    title: "Darryl-win Logossou . Full-stack mobile and web developer",
     description: "Fullstack Developer",
 };
 
