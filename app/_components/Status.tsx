@@ -1,6 +1,6 @@
 import {Section} from "@/app/_components/Section";
 import {Card} from "@/components/ui/card";
-import {CloudSun, Music2, MessagesSquare, Brain, Globe, Lock, UtensilsCrossed} from "lucide-react";
+import {CloudSun, MessagesSquare, Brain, Globe, Lock, UtensilsCrossed, Code2Icon} from "lucide-react";
 import { SideProject, SideProjectProps } from "./SideProject";
 import { ContactCard } from "./ContactCard";
 import { Work, WorkProps } from "./Work";
@@ -55,6 +55,12 @@ export const Status = () => {
 
 const SIDE_PROJECTS: SideProjectProps[] = [
   {
+    Logo: Code2Icon,
+    title: "Code Ascend",
+    description: "A quiz app for learning programming concepts in a fun and interactive way.",
+    url: "https://github.com/Darrylwin/CodeAscend",
+  },
+  {
     Logo: Lock,
     title: "SecVault",
     description: "A secure mobile vault for sharing private files with controlled access.",
@@ -83,12 +89,6 @@ const SIDE_PROJECTS: SideProjectProps[] = [
     title: "Minimal Chat",
     description: "A minimal real-time messaging application.",
     url: "https://github.com/Darrylwin/minimal_chat",
-  },
-  {
-    Logo: Music2,
-    title: "Spot UI",
-    description: "A mobile UI clone inspired by Spotify.",
-    url: "https://www.linkedin.com/posts/darryl-win-logossou_apprentissage-daezveloppementpersonnel-technologie-activity-7231609204556406784-fmN2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEnDcTsBtq1rpHagrdvd1uPwY4-7Pc3j2R0",
   },
   {
     Logo: CloudSun,
