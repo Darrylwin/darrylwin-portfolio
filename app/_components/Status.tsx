@@ -70,7 +70,7 @@ const SIDE_PROJECTS: SideProjectProps[] = [
     Logo: Brain,
     title: "Orientys",
     description: "An AI-driven orientation platform for students in the digital field.",
-    url: "https://orientys.acancampus.com",
+    url: "https://orientys.acanafrica.com",
   },
   {
     Logo: Globe,
@@ -105,7 +105,7 @@ const WORKS: WorkProps[] = [
         title: 'ACAN',
         role: 'Web Developer',
         date: 'June 2025 - January 2026',
-        url: "https://acancampus.com"
+        url: "https://acanafrica.com"
     },
     {
         image: 'https://www.linkedin.com/in/darryl-win-logossou/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B%2FINz23lOQN26PPSoP1BMUg%3D%3D',
