@@ -2,6 +2,7 @@ import { MBHIcon } from "../icons/MBHIcon";
 import { MLHIcon } from "../icons/MLHIcon";
 import { Code } from "./Code";
 import { Section } from "./Section";
+import { GitlabAiIcon } from "../icons/GitlabAiIcon";
 
 export const Hackatons = () => {
   return (
@@ -31,6 +32,21 @@ export const Hackatons = () => {
             We designed a solution that{" "}
             <u>facilitates educational and professional guidance </u> while
             making <u>learning more accessible and interactive</u>.
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-2 flex-1">
+          <GitlabAiIcon size={33} style={{ animationDuration: "10s" }} />
+          <h3 className="text-2xl font-semibold tracking-tight">
+            GitLab AI Hackathon
+          </h3>
+          <p className="text-muted-foreground text-sm">
+            We built an <Code>AI agent</Code> that{" "}
+            <u>
+              reviews code instantly, catches security flaws, and generates
+              tests
+            </u>{" "}
+            automatically.
           </p>
         </div>
       </div>
